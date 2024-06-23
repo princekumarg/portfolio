@@ -37,30 +37,30 @@ export const LINKS = [
 
 // External links
 export const EXTRA_LINKS = {
-  linkedin: "https://www.linkedin.com/in/sanidhyy",
-  github: "https://github.com/sanidhyy",
+  linkedin: "https://www.linkedin.com/in/prince-kumar-546b28237/",
+  github: "https://github.com/princekumarg",
   resume: "/resume.pdf",
-  source_code: "https://github.com/sanidhyy/portfolio",
-  email: "sanidhya.verma12345@gmail.com",
+  source_code: "https://github.com/princekumarg/portfolio",
+  email: "agarwal8789@gmail.com",
 } as const;
 
 // Data for work experience
 export const EXPERIENCES_DATA = [
   {
     title: "Passed High School",
-    location: "Sitapur, IN",
+    location: "Gaya, IN",
     description:
       "Completed my high school curriculum, gaining a solid foundation in various subjects and essential skills.",
     icon: React.createElement(LuGraduationCap),
     date: "2021",
   },
   {
-    title: "React.js Bootcamp",
-    location: "Lucknow, IN",
+    title: "Open Source(SSOC)",
+    location: "Remote, IN",
     description:
-      "Successfully completed an intensive 1-month React.js Developer Bootcamp. Acquired expertise in React components, state management with Redux, and interacting with RESTful APIs.",
+      "Successfully completed an Open Source Contribution 6-month HTML,CSS,JS Contribution. Acquired expertise in HTML,CSS,JS and animation",
     icon: React.createElement(CgWorkAlt),
-    date: "2022",
+    date: "2023",
   },
   {
     title: "Freelancer React.js Developer",
