@@ -1,16 +1,18 @@
 "use client"; // This comment indicates that this code should run on the client side in Next.js.
 
-// import clsx from "clsx";
+import clsx from "clsx";
+// import React,{ useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { LINKS } from "@/constants";
-// import { useActiveSectionContext } from "@/context/active-section-context";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 // Define the Header component.
 const Header = () => {
-    //   const { activeSection, setActiveSection, setTimeOfLastClick } =
-    //     useActiveSectionContext();
+    
+      const { activeSection, setActiveSection, setTimeOfLastClick } =
+        useActiveSectionContext();
 
     return (
         <header className="z-[999] relative">
@@ -30,7 +32,7 @@ const Header = () => {
                             initial={{ opacity: 0, y: -100 }}
                             animate={{ opacity: 1, y: 0 }}
                         >
-                            {/* <Link
+                            <Link
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-400 dark:hover:text-gray-200",
                   {
@@ -59,14 +61,8 @@ const Header = () => {
                     className="bg-gray-200/50 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                   />
                 )}
-              </Link> */}
-                            <Link
-                                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
-                                href={link.hash}
-                            >
-                                {link.name}
-                            </Link>
-                        </motion.li>
+                </Link>
+                  </motion.li>
                     ))}
                 </ul>
             </nav>

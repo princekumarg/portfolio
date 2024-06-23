@@ -5,18 +5,18 @@
 import { motion } from "framer-motion";
 
 // import { useSectionInView } from "@/lib/hooks";
-
+import { useSectionInView } from "@/lib/hook";
 import SectionHeading from "./section-heading";
 
 // Define the About component.
 const About = () => {
   // Use the useSectionInView custom hook to track when the "About" section is in view.
-//   const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About");
 
   // Return the About section, which uses framer-motion for animations.
   return (
     <motion.section
-    //   ref={ref}
+      ref={ref}
       id="about"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}

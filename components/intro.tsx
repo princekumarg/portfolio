@@ -11,18 +11,20 @@ import { HiDownload } from "react-icons/hi";
 
 import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
 // import { useActiveSectionContext } from "@/context/active-section-context";
+import { useActiveSectionContext } from "@/context/active-section-context";
 // import { useSectionInView } from "@/lib/hooks";
+import { useSectionInView } from "@/lib/hook";
 
 // Define the Intro component.
 const Intro = () => {
     // Use the 'useSectionInView' hook to track section visibility.
-    //   const { ref } = useSectionInView("Home", 0.5);
+      const { ref } = useSectionInView("Home", 0.5);
     // Use the 'useActiveSectionContext' to manage active sections and clicks.
-    //   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+      const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
     return (
         <section
-            //   ref={ref}
+            ref={ref}
             id="home"
             className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
         >
@@ -87,8 +89,8 @@ const Intro = () => {
                         className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-95 transition"
                         onClick={() => {
                             // Set the active section and the time of the last click.
-                            //   setActiveSection("Contact");
-                            //   setTimeOfLastClick(Date.now());
+                            setActiveSection("Contact");
+                            setTimeOfLastClick(Date.now());
                         }}
                     >
                         Contact me

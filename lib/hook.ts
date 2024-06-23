@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 import { useActiveSectionContext } from "@/context/active-section-context";
-import type { SectionName } from "./types";
+// import type { SectionName } from "./types";
+import type { SectionName } from './types'
 
 // Custom hook for tracking if a section is in view
 export const useSectionInView = (

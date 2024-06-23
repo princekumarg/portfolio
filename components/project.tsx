@@ -8,6 +8,7 @@ import Link from "next/link";
 
 import { PROJECTS_DATA } from "@/constants";
 // import { useSectionInView } from "@/lib/hooks";
+import { useSectionInView } from "@/lib/hook";
 
 import SectionHeading from "./section-heading";
 
@@ -101,11 +102,11 @@ const Project = ({
 // Define the Projects component to display a list of projects.
 const Projects = () => {
   // Use the 'useSectionInView' hook to track section visibility.
-//   const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("Projects", 0.5);
 
   return (
     <section 
-        // ref={ref} 
+        ref={ref} 
         id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>My projects</SectionHeading>
       <div>
