@@ -47,15 +47,15 @@ export const EXTRA_LINKS = {
 // Data for work experience
 export const EXPERIENCES_DATA = [
   {
-    title: "Passed High School",
-    location: "Gaya, IN",
+    title: "Passed B.Tech in Computer Science Engineering",
+    location: "Chittoor, IN",
     description:
-      "Completed my high school curriculum, gaining a solid foundation in various subjects and essential skills.",
+      "Completed B.Tech Degree, gaining a solid foundation in various subjects and essential skills.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021",
+    date: "2024",
   },
   {
-    title: "Open Source(SSOC)",
+    title: "Open Source At SSOC",
     location: "Remote, IN",
     description:
       "Successfully completed an Open Source Contribution 6-month HTML,CSS,JS Contribution. Acquired expertise in HTML,CSS,JS and animation",
@@ -68,7 +68,7 @@ export const EXPERIENCES_DATA = [
     description:
       "Working as a freelance React.js Developer, I have collaborated with various clients to create responsive and dynamic web applications.",
     icon: React.createElement(FaReact),
-    date: "2022 - present",
+    date: "2024 - present",
   },
 ] as const;
 
