@@ -44,7 +44,7 @@ const About = () => {
 
       {/* Display another paragraph about the user's interests and hobbies. */}
       <p>
-        <i className="italic">When I'm not coding</i>, I enjoy playing video
+        <i className="italic">When I&apos;m not coding</i>, I enjoy playing video
         games, watching movies, and reading novels. I also enjoy{" "}
         <b className="font-medium">learning new things</b>. I am currently
         learning about <b className="font-medium">astronomy and psychology</b>.
