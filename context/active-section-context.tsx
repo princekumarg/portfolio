@@ -33,8 +33,6 @@ const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
 const ActiveSectionContextProvider = ({
   children,
 }: ActiveSectionContextProviderProps) => {
-  // Initialize state for activeSection and timeOfLastClick
-//   const [activeSection, setActiveSection] = useState("Home");
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
   const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0);
 

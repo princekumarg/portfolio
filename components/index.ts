@@ -7,6 +7,8 @@ import SectionHeading from "./section-heading";
 import Skills from "./skills";
 import ThemeSwitch from "./theme-switch";
 import Header from "./header";
+import Contact from "./contact";
+import Footer from "./footer";
 
 export{
     About,
@@ -18,4 +20,6 @@ export{
     Skills,
     Header,
     ThemeSwitch,
+    Contact,
+    Footer
 }
