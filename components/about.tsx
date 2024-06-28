@@ -48,7 +48,7 @@ const About = () => {
         games, watching movies, and reading novels. I also enjoy{" "}
         <b className="font-medium">learning new things</b>. I am currently
         learning about <b className="font-medium">astronomy and psychology</b>.
-        I'm also learning how to build and program robots.
+        I&apos;m also learning how to build and program robots.
       </p>
     </motion.section>
   );
