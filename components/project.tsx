@@ -72,7 +72,7 @@ const Project = ({
           title={`Visit Project: ${title}`}
           className="group/project"
         >
-          <Image
+{/*           <Image
             src={imageUrl}
             alt={title}
             quality={95}
@@ -92,7 +92,28 @@ const Project = ({
             group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
             
             group-hover:scale-[1.04] transition"
-          />
+          /> */}
+          <Image
+  src={imageUrl}
+  alt={title}
+  quality={95}
+  className="absolute hidden sm:block bottom-8 -right-40 w-[28.25rem]
+  rounded-t-lg shadow-2xl group-even:right-[initial] 
+  group-even:-left-40 group-hover:-translate-x-3
+  group-hover:translate-y-3 group-hover:-rotate-2
+
+  group-focus/project:-translate-x-3
+  group-focus/project:translate-y-3 group-focus/project:-rotate-2
+  group-even:group-focus/project:translate-x-3
+  group-even:group-focus/project:translate-y-3 group-even:group-focus/project:rotate-2
+  
+  group-focus/project:scale-[1.04]
+  
+  group-even:group-hover:translate-x-3
+  group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
+  
+  group-hover:scale-[1.04] transition"
+/>
         </Link>
       </div>
     </motion.article>
