@@ -72,7 +72,7 @@ const Project = ({
           title={`Visit Project: ${title}`}
           className="group/project"
         >
-          <Image
+{/*           <Image
             src={imageUrl}
             alt={title}
             quality={95}
@@ -92,7 +92,17 @@ const Project = ({
             group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
             
             group-hover:scale-[1.04] transition"
-          />
+          /> */}
+          <div className="bg-black  aspect-video overflow-hidden md:hover:scale-105 md:duration-200">
+                <Image
+                      height="800"
+                      width="1200"
+                      src={imageUrl}
+                      alt={title}
+                      quality={95}
+                      className="transition-transform hover:-translate-y-[40%]  hover:duration-1000 ease-linear"
+                />
+           </div>
         </Link>
       </div>
     </motion.article>
