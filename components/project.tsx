@@ -100,7 +100,22 @@ const Project = ({
                       src={imageUrl}
                       alt={title}
                       quality={95}
-                      className="transition-transform hover:-translate-y-[40%]  hover:duration-1000 ease-linear"
+                      className="transition-transform hover:-translate-y-[40%]  hover:duration-1000 ease-linearabsolute hidden sm:block top-8 -right-40 w-[28.25rem]
+                                rounded-t-lg shadow-2xl group-even:right-[initial] 
+                                group-even:-left-40 group-hover:-translate-x-3
+                                group-hover:translate-y-3 group-hover:-rotate-2
+
+                                group-focus/project:-translate-x-3
+                                group-focus/project:translate-y-3 group-focus/project:-rotate-2
+                                group-even:group-focus/project:translate-x-3
+                                group-even:group-focus/project:translate-y-3 group-even:group-focus/project:rotate-2
+            
+                                group-focus/project:scale-[1.04]
+            
+                                group-even:group-hover:translate-x-3
+                                group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
+            
+                                group-hover:scale-[1.04] "
                 />
            </div>
         </Link>
