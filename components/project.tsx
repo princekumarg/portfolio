@@ -93,7 +93,7 @@ const Project = ({
             
             group-hover:scale-[1.04] transition"
           /> */}
-          <div className="bg-black  aspect-video overflow-hidden md:hover:scale-105 md:duration-200">
+{/*           <div className="bg-black  aspect-video overflow-hidden md:hover:scale-105 md:duration-200"> */}
                 <Image
                       height="800"
                       width="1200"
@@ -117,7 +117,7 @@ const Project = ({
             
                                 group-hover:scale-[1.04] "
                 />
-           </div>
+{/*            </div> */}
         </Link>
       </div>
     </motion.article>
